@@ -1,0 +1,34 @@
+name: Ramidi Sandeep Reddy
+mobile No :8309967356
+mail id:sandeepramidi26500@gmail.com 
+collage: AVN INSTITUTE OF ENGINEERING AND TECHNOLOGY 
+pass out Year:2022
+
+
+
+
+
+class planet:
+    def __init__(self,name,surface_gasses,no_of_moons,planet_has_ring):
+        self.name = name
+        self.surface_gasses = surface_gasses
+        self.no_of_moons = no_of_moons
+        self.planet_has_ring=planet_has_ring
+    def count_of_moons(self):
+        total_moons = 0
+        if (self.planet_has_ring == "Yes"):
+            total_moons+=self.no_of_moons
+        print(total_moons)
+    def gasses(self):
+        gases = self.surface_gasses
+        gases.split(", ")
+        print(max(gases))
+        
+        
+        
+planet("Mercury","",0,"No")
+planet("Venus","Carbon Dioxide, Nitrogen",0,"No")
+planet("Earth","Nitrogen, Oxygen ",1,"No")
+planet("Jupitor","Hydrogen, Helium",79,"Yes")
+planet("Saturn","Hydrogen, Helium",83,"Yes")
+planet("Uranus","Hydrogen, Helium, Methane",27,"Yes")
